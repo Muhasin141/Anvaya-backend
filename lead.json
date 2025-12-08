@@ -1,0 +1,114 @@
+[
+  {
+    "name": "John Doe",
+    "source": "Website",
+    "salesAgent": "693660c30da4f2be29a3a5ce",
+    "status": "New",
+    "tags": ["High Value", "Follow-up"],
+    "timeToClose": 12,
+    "priority": "High",
+    "createdAt": "2025-01-10T09:15:00Z",
+    "updatedAt": "2025-01-10T09:15:00Z"
+  },
+  {
+    "name": "Mia Thompson",
+    "source": "Referral",
+    "salesAgent": "693660c30da4f2be29a3a5cf",
+    "status": "Contacted",
+    "tags": ["Warm Lead"],
+    "timeToClose": 7,
+    "priority": "Medium",
+    "createdAt": "2025-01-11T12:30:00Z",
+    "updatedAt": "2025-01-11T12:30:00Z"
+  },
+  {
+    "name": "Charles Green",
+    "source": "Cold Call",
+    "salesAgent": "693660c30da4f2be29a3a5d0",
+    "status": "Qualified",
+    "tags": ["Negotiation"],
+    "timeToClose": 20,
+    "priority": "High",
+    "createdAt": "2025-01-12T14:10:00Z",
+    "updatedAt": "2025-01-12T14:10:00Z"
+  },
+  {
+    "name": "Isabella Rivera",
+    "source": "Advertisement",
+    "salesAgent": "693660c30da4f2be29a3a5d1",
+    "status": "Proposal Sent",
+    "tags": ["Follow-up", "High Chance"],
+    "timeToClose": 15,
+    "priority": "Medium",
+    "createdAt": "2025-01-13T10:05:00Z",
+    "updatedAt": "2025-01-13T10:05:00Z"
+  },
+  {
+    "name": "Mark Spencer",
+    "source": "Email",
+    "salesAgent": "693660c30da4f2be29a3a5d2",
+    "status": "Closed",
+    "tags": ["Converted"],
+    "timeToClose": 5,
+    "priority": "Low",
+    "createdAt": "2025-01-14T11:50:00Z",
+    "updatedAt": "2025-01-14T11:50:00Z",
+    "closedAt": "2025-01-19T11:50:00Z"
+  },
+  {
+    "name": "Ella Harris",
+    "source": "Website",
+    "salesAgent": "693660c30da4f2be29a3a5ce",
+    "status": "New",
+    "tags": ["High Value"],
+    "timeToClose": 18,
+    "priority": "High",
+    "createdAt": "2025-01-15T08:20:00Z",
+    "updatedAt": "2025-01-15T08:20:00Z"
+  },
+  {
+    "name": "Jordan Blake",
+    "source": "Referral",
+    "salesAgent": "693660c30da4f2be29a3a5cf",
+    "status": "Contacted",
+    "tags": ["Interested"],
+    "timeToClose": 9,
+    "priority": "Medium",
+    "createdAt": "2025-01-16T13:40:00Z",
+    "updatedAt": "2025-01-16T13:40:00Z"
+  },
+  {
+    "name": "Samantha Lee",
+    "source": "Advertisement",
+    "salesAgent": "693660c30da4f2be29a3a5d1",
+    "status": "Qualified",
+    "tags": ["Follow-up"],
+    "timeToClose": 14,
+    "priority": "Low",
+    "createdAt": "2025-01-17T09:05:00Z",
+    "updatedAt": "2025-01-17T09:05:00Z"
+  },
+  {
+    "name": "Victor Torres",
+    "source": "Cold Call",
+    "salesAgent": "693660c30da4f2be29a3a5d0",
+    "status": "Proposal Sent",
+    "tags": ["Negotiation", "Urgent"],
+    "timeToClose": 22,
+    "priority": "High",
+    "createdAt": "2025-01-18T11:25:00Z",
+    "updatedAt": "2025-01-18T11:25:00Z"
+  },
+  {
+    "name": "Rachel Morgan",
+    "source": "Other",
+    "salesAgent": "693660c30da4f2be29a3a5d2",
+    "status": "Closed",
+    "tags": ["Converted", "Repeat Customer"],
+    "timeToClose": 6,
+    "priority": "Medium",
+    "createdAt": "2025-01-19T15:55:00Z",
+    "updatedAt": "2025-01-19T15:55:00Z",
+    "closedAt": "2025-01-25T15:55:00Z"
+  }
+]

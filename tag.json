@@ -1,0 +1,38 @@
+[
+  {
+    "name": "High Value",
+    "createdAt": "2025-02-01T10:00:00Z"
+  },
+  {
+    "name": "Follow-up",
+    "createdAt": "2025-02-01T10:05:00Z"
+  },
+  {
+    "name": "Warm Lead",
+    "createdAt": "2025-02-01T10:10:00Z"
+  },
+  {
+    "name": "Negotiation",
+    "createdAt": "2025-02-01T10:15:00Z"
+  },
+  {
+    "name": "High Chance",
+    "createdAt": "2025-02-01T10:20:00Z"
+  },
+  {
+    "name": "Converted",
+    "createdAt": "2025-02-01T10:25:00Z"
+  },
+  {
+    "name": "Interested",
+    "createdAt": "2025-02-01T10:30:00Z"
+  },
+  {
+    "name": "Urgent",
+    "createdAt": "2025-02-01T10:35:00Z"
+  },
+  {
+    "name": "Repeat Customer",
+    "createdAt": "2025-02-01T10:40:00Z"
+  }
+]
