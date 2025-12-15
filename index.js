@@ -103,18 +103,21 @@ app.get("/agents", async (req, res) => {
 // =======================================================
 
 // Create Lead
-app.post("/leads", async (req, res) => {
+app.post("/leads", async (req, res, next) => {
   try {
     const lead = new Lead(req.body);
     await lead.save();
 
-    const populated = await Lead.findById(lead._id).populate("salesAgent", "name email");
-    res.status(201).json(populated);
+    const populatedLead = await Lead.findById(lead._id)
+      .populate("salesAgent", "name email");
+
+    res.status(201).json(populatedLead);
 
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    next(error); // pass to error middleware
   }
 });
+
 
 // Get all leads (with filters)
 app.get("/leads", async (req, res) => {
@@ -230,5 +233,10 @@ app.get("/tags", async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch tags" });
   }
+});
+
+app.use((err, req, res, next) => {
+  console.error("Server error:", err.message);
+  res.status(500).json({ error: err.message });
 });
 
