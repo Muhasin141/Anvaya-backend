@@ -103,7 +103,7 @@ app.get("/agents", async (req, res) => {
 // =======================================================
 
 // Create Lead
-app.post("/leads", async (req, res, next) => {
+app.post("/leads", async (req, res) => {
   try {
     const lead = new Lead(req.body);
     await lead.save();
@@ -114,7 +114,8 @@ app.post("/leads", async (req, res, next) => {
     res.status(201).json(populatedLead);
 
   } catch (error) {
-    next(error); // pass to error middleware
+    console.error("Create lead error:", error);
+    res.status(400).json({ error: error.message });
   }
 });
 
@@ -235,8 +236,4 @@ app.get("/tags", async (req, res) => {
   }
 });
 
-app.use((err, req, res, next) => {
-  console.error("Server error:", err.message);
-  res.status(500).json({ error: err.message });
-});
 
