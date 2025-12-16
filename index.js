@@ -98,6 +98,26 @@ app.get("/agents", async (req, res) => {
   }
 });
 
+// Create Sales Agent
+app.post("/agents", async (req, res) => {
+  try {
+    const { name, email } = req.body;
+
+    if (!name || !email) {
+      return res.status(400).json({ error: "Name and Email are required" });
+    }
+
+    const agent = new SalesAgent({ name, email });
+    await agent.save();
+
+    res.status(201).json(agent);
+  } catch (error) {
+    console.error("Create agent error:", error);
+    res.status(400).json({ error: error.message });
+  }
+});
+
+
 // =======================================================
 //                      LEAD ROUTES
 // =======================================================
