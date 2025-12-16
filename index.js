@@ -118,6 +118,21 @@ app.post("/agents", async (req, res) => {
 });
 
 
+// Delete sales agent
+app.delete("/agents/:id", async (req, res) => {
+  try {
+    const agent = await SalesAgent.findByIdAndDelete(req.params.id);
+
+    if (!agent) {
+      return res.status(404).json({ error: "Agent not found" });
+    }
+
+    res.json({ message: "Agent deleted successfully" });
+  } catch (error) {
+    res.status(400).json({ error: "Invalid Agent ID" });
+  }
+});
+
 // =======================================================
 //                      LEAD ROUTES
 // =======================================================
