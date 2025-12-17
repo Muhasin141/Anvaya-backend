@@ -255,6 +255,26 @@ app.post("/leads/:id/comments", async (req, res) => {
   }
 });
 
+// Update sales agent
+app.put("/agents/:id", async (req, res) => {
+  try {
+    const updatedAgent = await SalesAgent.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedAgent) {
+      return res.status(404).json({ error: "Agent not found" });
+    }
+
+    res.json(updatedAgent);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
+
 
 // =======================================================
 //                     TAG ROUTES
